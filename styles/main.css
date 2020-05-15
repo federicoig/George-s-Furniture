@@ -83,8 +83,8 @@ header .nav .menu ul a:hover {
 #home .home-text {
   text-align: left;
   margin: 4% 5% 5% 5%;
-  -webkit-animation: transportText 2s ease;
-          animation: transportText 2s ease;
+  -webkit-animation: transportText 2.5s ease;
+          animation: transportText 2.5s ease;
 }
 
 #home .home-text .home-title {
@@ -340,8 +340,8 @@ footer div .me {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-  -webkit-animation: opacity 2s ease;
-          animation: opacity 2s ease;
+  -webkit-animation: opacity 1s ease;
+          animation: opacity 1s ease;
 }
 
 .separator, .separator2 {
