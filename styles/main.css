@@ -237,18 +237,33 @@ header .nav .menu ul a:hover {
 }
 
 #info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
   margin: 2%;
+  margin-top: 4%;
+  margin-bottom: 5%;
 }
 
-#info h1 {
-  margin-top: -1%;
+#info .info-text {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#info .info-text h1 {
+  margin-top: 3%;
   text-align: center;
-  font-size: 370%;
+  font-size: 320%;
 }
 
-#info p {
-  margin-top: 1%;
-  font-size: 155%;
+#info .info-text p {
+  margin-top: 2%;
+  font-size: 145%;
   text-align: justify;
 }
 
@@ -258,7 +273,7 @@ header .nav .menu ul a:hover {
 }
 
 #info .george img {
-  width: 50%;
+  width: 90%;
 }
 
 footer {
@@ -329,7 +344,7 @@ footer div .me {
           animation: opacity 2s ease;
 }
 
-.separator {
+.separator, .separator2 {
   position: relative;
   background: #4e342e;
   height: 10vh;
@@ -374,17 +389,20 @@ footer div .me {
     display: block;
     margin: -4% auto;
   }
-  #info h1 {
+  #info {
+    display: block;
+  }
+  #info .info-text h1 {
     margin-top: 1%;
     font-size: 300%;
   }
-  #info p {
+  #info .info-text p {
     margin-top: 1%;
     text-align: center;
     font-size: 145%;
   }
   #info .george img {
-    width: 70%;
+    width: 65%;
   }
   #footer div .contact {
     font-size: 135%;
@@ -420,11 +438,11 @@ footer div .me {
   #gallery .sofa {
     display: none;
   }
-  #info h1 {
+  #info .info-text h1 {
     margin-top: 1%;
     font-size: 240%;
   }
-  #info p {
+  #info .info-text p {
     margin-top: 2%;
     text-align: center;
     font-size: 125%;
@@ -454,14 +472,14 @@ footer div .me {
   #home .home-text p {
     font-size: 130%;
   }
-  #info h1 {
+  #info .info-text h1 {
     margin-top: 1%;
     font-size: 200%;
   }
-  #info p {
+  #info .info-text p {
     margin-top: 2%;
     text-align: center;
-    font-size: 115%;
+    font-size: 110%;
   }
   #info .george img {
     width: 70%;
