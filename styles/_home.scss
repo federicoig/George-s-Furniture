@@ -1,0 +1,84 @@
+#home {
+    display: flex;
+    .home-text {
+        text-align: left;
+        margin: 4% 5% 5% 5%;
+        animation: transportText 2s ease;
+        .home-title {
+            font-size: 300%;
+            flex: 2;
+        }
+        p {
+            margin-top: 5%;
+            font-size: 150%;
+            span {
+                margin-top: 4%;
+                font-size: 150%;
+                display: block;
+            }
+        }
+        .home-buttons {                
+            justify-content: center;
+            align-items: center;                
+            margin-top: 4%;
+            .info-button {
+                cursor: pointer;
+                font-size: 110%;
+                border: 2px solid $primary-color;
+                background-color: $primary-color;
+                color: white;
+                padding: 2%;
+                transition: background-color 0.3s ease, color 0.3s ease;
+                &:hover{
+                    color: black;
+                    background-color: white;
+                }
+            }
+            .order-button {
+                cursor: pointer;
+                font-size: 110%;
+                border: 2px solid $primary-color;
+                background-color: $primary-color;
+                color: white;
+                padding: 2%;
+                transition: background-color 0.3s ease, color 0.3s ease;
+                &:hover{
+                    color: black;
+                    background-color: white;
+                }
+            }
+        }
+    }
+    .image {
+        width: 170%;            
+        margin: 12% 5% 3% 3%;
+        .sofa {
+            width: 100%;
+            height: auto;        
+            flex: 1;
+            animation: transportImage 2.5s ease;
+        }
+    }
+}
+
+@keyframes transportImage {
+    0% {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes transportText {
+    0% {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}

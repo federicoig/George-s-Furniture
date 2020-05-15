@@ -1,0 +1,45 @@
+header {
+    display: flex;
+    color: white;
+    background-color: $primary-color;
+    padding: 1%;
+    .title-container {
+        flex: 5;
+        .title {
+            font-size: 300%;
+        }
+    }
+    .nav {    
+        align-self: center;
+        list-style: none;
+        flex-direction: column;
+        flex: 2;  
+        .menu {
+            ul {
+                display: inline-block;
+                margin-right: 5%;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    transition: color 0.3s ease;
+                    cursor: pointer;
+                    &:hover{
+                        color: wheat;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes transportHeader {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
